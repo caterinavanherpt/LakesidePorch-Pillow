@@ -141,7 +141,8 @@ h1, h2, ul, li, p, a {
   margin: 0 auto; }
 
 body {
-  position: relative; }
+  position: relative;
+  font-family: "Oswald", sans-serif; }
 
 .nav {
   position: fixed;
@@ -151,20 +152,22 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 0 15%; }
+  padding: 1% 15%; }
 
 .nav__logo {
-  max-width: 200px; }
+  max-width: 150px; }
 
 .nav__list {
   list-style: none;
   display: flex; }
 
 .nav__list-item {
-  padding: 20px; }
+  padding-left: 35px; }
   .nav__list-item a {
     text-decoration: none;
-    color: black; }
+    color: #0089C4;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
 
 .header {
   background: url(../../assets/hero.jpeg);
@@ -179,3 +182,6 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%; }
+  .header__header h1 {
+    color: #052E70;
+    font-size: 4.5em; }

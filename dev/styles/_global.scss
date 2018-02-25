@@ -3,8 +3,14 @@ $lightblue: #0089C4;
 $darkblue: #052E70;
 $grey: #C7C8CA;
 
-// $primaryfont: 
+
+$primaryfont: 'Oswald', sans-serif;
 // $secondaryfont: 
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Yanone Kaffeesatz', sans-serif;
 
 .wrapper {
 	max-width: 90%;
@@ -13,4 +19,5 @@ $grey: #C7C8CA;
 
 body {
 	position: relative;
+	font-family: $primaryfont;
 }

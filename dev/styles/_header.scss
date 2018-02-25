@@ -1,17 +1,16 @@
 .nav {
 	position: fixed;
-	// background: white;
 	width: 100%;
 	top: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	z-index: 1;
-	padding: 0 15%;
+	padding: 1% 15%;
 }
 
 .nav__logo {
-	max-width: 200px;
+	max-width: 150px;
 }
 
 .nav__list {
@@ -20,15 +19,16 @@
 }
 
 .nav__list-item {
-	padding: 20px;
+	padding-left: 35px;
 	a {
 		text-decoration: none;
-		color: black;
+		color: $lightblue;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
 	}
 }
 
 .header {
-	// margin-top: 160px;
 	background: url(../../assets/hero.jpeg);
 	height: 100vh;
 	background-repeat: no-repeat;
@@ -42,4 +42,8 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 	left: 50%;
+	h1 {
+		color: $darkblue;
+		font-size: 4.5em;
+	}
 }
