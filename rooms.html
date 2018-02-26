@@ -9,44 +9,51 @@
 	<meta property="og:description" content=" "/>
 	<title>Lakeside Porch & Pillow</title>
 	<link rel="stylesheet" href="public/styles/style.css">
+	<!-- link to google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
 </head>
 <body>
-	<nav class="nav">
-		<div class="header__logo">
-			<img src="assets/logo.png" alt="">
+<header class="header header__rooms">
+		<nav class="nav">
+			<div class="nav__name">
+				<p class="nav__title">Lakeside</p>
+				<p class="nav__accent">Porch & Pillow</p>
+			</div>
+			<ul class="nav__list">
+				<li class="nav__list-item home">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="nav__list-item"> 
+					<a href="rooms.html">Rooms</a>
+				</li>
+				<li class="nav__list-item">
+					<a href="discover.html">Discover</a>
+				</li>
+				<li class="nav__list-item">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__header wrapper">
+			<h1>Rooms</h1>
+			<h2>Inside this B&B, you’ll enjoy beautifully decorated rooms and en-suite bathrooms with walk-in showers.  There are two rooms (1 King and 1 Queen) that have their own balconies overlooking Lake Erie.  The other two rooms (1 Queen and 1 Double Queen) are comfortable and cozy, and provide a quiet place to relax.</h2>
 		</div>
-		<ul class="nav__list">
-			<li class="nav__list-item home">
-				<a href="index.html">Home</a>
-			</li>
-			<li class="nav__list-item"> 
-				<a href="rooms.html">Rooms</a>
-			</li>
-			<li class="nav__list-item">
-				<a href="discover.html">Discover</a>
-			</li>
-			<li class="nav__list-item">
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-	</nav>
-	<section>
-		<h1>Rooms</h1>
-		<h2>Inside this B&B, you’ll enjoy beautifully decorated rooms and en-suite bathrooms with walk-in showers.  There are two rooms (1 King and 1 Queen) that have their own balconies overlooking Lake Erie.  The other two rooms (1 Queen and 1 Double Queen) are comfortable and cozy, and provide a quiet place to relax.</h2>
+	</header>
+	<section class="rooms__section wrapper">
 		<ul class="rooms__list">
-			<li>
+			<li class="rooms__list-item">
 				<img src="assets/KingWithBalcony.jpeg" alt="King with Balcony Room">
 				<p>King with Balcony</p>
 			</li>
-			<li>
+			<li class="rooms__list-item">
 				<img src="assets/QueenWithBalcony.jpg" alt="Queen with Balcony Room">
 				<p>Queen with Balcony</p>
 			</li>
-			<li>
+			<li class="rooms__list-item">
 				<img src="assets/DoubleQueen.jpeg" alt="Double Queen Room">
 				<p>Double Queen Room</p>
 			</li>
-			<li>
+			<li class="rooms__list-item">
 				<img src="assets/Queen.jpg" alt="Queen Room">
 				<p>Queen</p>
 			</li>
@@ -54,18 +61,18 @@
 		<p>Room rates available upon request.</p>
 	</section>
 	<footer class="footer">
-		<div class="footer__contact-wrapper">
-			<div>
-				<p>123 Adelaide St,</p>
-				<p>Harrow Ontario, N0R 1G0 | 519-819-7154</p>
+		<div class="footer__contact-wrapper wrapper">
+			<div class="footer__item">
+				<p>123 Adelaide St, Harrow Ontario, N0R 1G0</p>
+				<p>519-819-7154 | <button>Contact Us</button></p>
+				<p>Copyright &copy; Lakeside Porch & Pillow</p>
 			</div>
-			<div>
-				<button>Contact Us</button>
+			<!-- <div class="footer__item">
+				<p>Lakeside Porch & Pillow is a unique bed and breakfast located in Harrow Ontario. Come visit us!</p>
+			</div> -->
+			<div class="footer__item">
+				<img class ="footer__logo" src="assets/LAKESIDEP&P.png" alt="">
 			</div>
-		</div>
-		<div class="footer__copyright">
-			<p>Copyright &copy; Lakeside Porch & Pillow </p>
-			<p>Website by <a href="www.caterinavanherpt.com">Caterina van Herpt</a></p>
 		</div>
 	</footer>
 </body>

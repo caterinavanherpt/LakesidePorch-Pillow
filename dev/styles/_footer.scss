@@ -1,8 +1,21 @@
 .footer {
-	// position: absolute;
-	// bottom: 0;
+	background: $grey;
+	// font-family: $thirdfont;
+	color: $darkgrey;
+	// margin-top: 3%;
+	// padding-top: 2%;
+	// border-top: solid 1.5px $darkgrey;
+	font-size: 1em;
+	letter-spacing: 1.5px;
 }
+
+ .footer__contact-wrapper {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
 
 .footer__logo {
 	max-width: 150px;
+	padding: 15% 0;
 }

@@ -1,9 +1,15 @@
-.header {
+.header__index {
 	background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.18), rgba(247, 232, 191, 0.24)), url(../../assets/hero.jpeg);
-	height: 100vh;
+	height: 700px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+}
+
+.header__rooms {
+	.nav {
+		background-color: white;
+	}
 }
 
 .nav {
@@ -14,7 +20,8 @@
 	justify-content: space-between;
 	align-items: center;
 	z-index: 1;
-	padding: 3% 10%;
+	padding: 2% 10%;
+
 }
 
 .nav__name {
@@ -50,18 +57,19 @@
 	padding-left: 35px;
 	a {
 		text-decoration: none;
-		color: $darkgrey;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
+		color: $darkgrey;
+		transition: all 0.2s ease-in;
+	}
+	a:hover {
+		color: $lightblue;
 	}
 }
 
 .header__header {
-	position: absolute;
 	text-align: center;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	padding-top: 15%;
 	color: $darkgrey;
 	width: 100%;
 	h1 {
@@ -74,6 +82,5 @@
 		font-size:1.4em;
 		letter-spacing: 1px;
 		font-weight: normal;
-		// line-height: 25px;
 	}
 }

@@ -148,12 +148,15 @@ body {
   position: relative;
   font-family: "Oswald", sans-serif; }
 
-.header {
+.header__index {
   background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.18), rgba(247, 232, 191, 0.24)), url(../../assets/hero.jpeg);
-  height: 100vh;
+  height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top; }
+
+.header__rooms .nav {
+  background-color: white; }
 
 .nav {
   position: fixed;
@@ -163,12 +166,12 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 3% 10%; }
+  padding: 2% 10%; }
 
 .nav__name {
   width: 100%;
   color: #052E70;
-  border-left: solid 1.5px #303132; }
+  border-left: solid 1.5px #3f4a55; }
   .nav__name p {
     padding-left: 1%; }
 
@@ -192,17 +195,17 @@ body {
   padding-left: 35px; }
   .nav__list-item a {
     text-decoration: none;
-    color: #303132;
     text-transform: uppercase;
-    letter-spacing: 1.5px; }
+    letter-spacing: 1.5px;
+    color: #3f4a55;
+    transition: all 0.2s ease-in; }
+  .nav__list-item a:hover {
+    color: #0089C4; }
 
 .header__header {
-  position: absolute;
   text-align: center;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #303132;
+  padding-top: 15%;
+  color: #3f4a55;
   width: 100%; }
   .header__header h1 {
     font-size: 5.5em;
@@ -214,5 +217,28 @@ body {
     letter-spacing: 1px;
     font-weight: normal; }
 
+.rooms__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.rooms__list-item {
+  padding: 5% 0; }
+  .rooms__list-item img {
+    max-width: 550px; }
+
+.footer {
+  background: #C7C8CA;
+  color: #3f4a55;
+  font-size: 1em;
+  letter-spacing: 1.5px; }
+
+.footer__contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 .footer__logo {
-  max-width: 150px; }
+  max-width: 150px;
+  padding: 15% 0; }

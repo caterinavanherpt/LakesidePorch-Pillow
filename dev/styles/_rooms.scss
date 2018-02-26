@@ -1,0 +1,14 @@
+.rooms__list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.rooms__list-item {
+	padding: 5% 0;
+	img {
+		max-width: 550px;
+	}
+}
