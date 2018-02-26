@@ -170,10 +170,7 @@ body {
 
 .nav__name {
   width: 100%;
-  color: #052E70;
-  border-left: solid 1.5px #3f4a55; }
-  .nav__name p {
-    padding-left: 1%; }
+  color: #052E70; }
 
 .nav__title {
   font-size: 1.8em;
@@ -198,7 +195,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #3f4a55;
-    transition: all 0.2s ease-in; }
+    transition: all 0.2s ease-in;
+    font-size: 0.9em; }
   .nav__list-item a:hover {
     color: #0089C4; }
 
@@ -212,10 +210,8 @@ body {
     font-family: "OctoberMoon", sans-serif;
     font-weight: normal; }
   .header__header h2 {
-    font-family: "Yanone Kaffeesatz", sans-serif;
     font-size: 1.4em;
-    letter-spacing: 1px;
-    font-weight: normal; }
+    font-weight: 300; }
 
 .rooms__list {
   display: flex;

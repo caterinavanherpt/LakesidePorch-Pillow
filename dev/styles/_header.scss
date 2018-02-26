@@ -27,9 +27,9 @@
 .nav__name {
 	width: 100%;
 	color: $darkblue;
-	border-left: solid 1.5px $darkgrey;
+	// border-left: solid 1.5px $darkgrey;
 	p {
-		padding-left: 1%;
+		// padding-left: 1%;
 	}
 }
 
@@ -61,6 +61,7 @@
 		letter-spacing: 1.5px;
 		color: $darkgrey;
 		transition: all 0.2s ease-in;
+		font-size: 0.9em;
 	}
 	a:hover {
 		color: $lightblue;
@@ -78,9 +79,9 @@
 		font-weight: normal;
 	}
 	h2 {
-		font-family: $thirdfont;
+		// font-family: $thirdfont;
 		font-size:1.4em;
-		letter-spacing: 1px;
-		font-weight: normal;
+		// letter-spacing: 1px;
+		font-weight: 300;
 	}
 }
