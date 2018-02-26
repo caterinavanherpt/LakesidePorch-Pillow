@@ -1,11 +1,20 @@
+//fonts 
+
+@font-face {
+	font-family: 'OctoberMoon';
+	src: url("../../fonts/october-moon/October Moon - TTF.ttf") format("truetype");
+}
+
 //variables 
 $lightblue: #0089C4;
 $darkblue: #052E70;
 $grey: #C7C8CA;
+$darkgrey: #303132;
 
 
 $primaryfont: 'Oswald', sans-serif;
-// $secondaryfont: 
+$secondaryfont: 'OctoberMoon', sans-serif;
+$thirdfont: 'Yanone Kaffeesatz', sans-serif;
 
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Roboto Condensed', sans-serif;
@@ -13,7 +22,7 @@ $primaryfont: 'Oswald', sans-serif;
 // font-family: 'Yanone Kaffeesatz', sans-serif;
 
 .wrapper {
-	max-width: 90%;
+	max-width: 80%;
 	margin: 0 auto;
 }
 

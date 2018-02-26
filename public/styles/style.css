@@ -136,13 +136,24 @@ h1, h2, ul, li, p, a {
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: 'OctoberMoon';
+  src: url("../../fonts/october-moon/October Moon - TTF.ttf") format("truetype"); }
+
 .wrapper {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto; }
 
 body {
   position: relative;
   font-family: "Oswald", sans-serif; }
+
+.header {
+  background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.18), rgba(247, 232, 191, 0.24)), url(../../assets/hero.jpeg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
 
 .nav {
   position: fixed;
@@ -152,10 +163,26 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 1% 15%; }
+  padding: 3% 10%; }
 
-.nav__logo {
-  max-width: 150px; }
+.nav__name {
+  width: 100%;
+  color: #052E70;
+  border-left: solid 1.5px #303132; }
+  .nav__name p {
+    padding-left: 1%; }
+
+.nav__title {
+  font-size: 1.8em;
+  font-family: "OctoberMoon", sans-serif; }
+
+.nav__accent {
+  text-transform: uppercase;
+  color: #0089C4;
+  font-size: 1.3em;
+  letter-spacing: -1.5px;
+  margin-left: 10px;
+  margin-top: -16px; }
 
 .nav__list {
   list-style: none;
@@ -165,23 +192,27 @@ body {
   padding-left: 35px; }
   .nav__list-item a {
     text-decoration: none;
-    color: #0089C4;
+    color: #303132;
     text-transform: uppercase;
     letter-spacing: 1.5px; }
-
-.header {
-  background: url(../../assets/hero.jpeg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
 
 .header__header {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  left: 50%; }
+  color: #303132;
+  width: 100%; }
   .header__header h1 {
-    color: #052E70;
-    font-size: 4.5em; }
+    font-size: 5.5em;
+    font-family: "OctoberMoon", sans-serif;
+    font-weight: normal; }
+  .header__header h2 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-weight: normal; }
+
+.footer__logo {
+  max-width: 150px; }

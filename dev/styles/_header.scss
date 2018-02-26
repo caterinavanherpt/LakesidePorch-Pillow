@@ -1,3 +1,11 @@
+.header {
+	background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.18), rgba(247, 232, 191, 0.24)), url(../../assets/hero.jpeg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
 .nav {
 	position: fixed;
 	width: 100%;
@@ -6,12 +14,32 @@
 	justify-content: space-between;
 	align-items: center;
 	z-index: 1;
-	padding: 1% 15%;
+	padding: 3% 10%;
 }
 
-.nav__logo {
-	max-width: 150px;
+.nav__name {
+	width: 100%;
+	color: $darkblue;
+	border-left: solid 1.5px $darkgrey;
+	p {
+		padding-left: 1%;
+	}
 }
+
+.nav__title {
+	font-size: 1.8em;
+	font-family: $secondaryfont;
+}
+
+.nav__accent {
+	text-transform: uppercase;
+	color: $lightblue;
+	font-size: 1.3em;
+	letter-spacing: -1.5px;
+	margin-left: 10px;
+    margin-top: -16px;
+}
+
 
 .nav__list {
 	list-style: none;
@@ -22,28 +50,30 @@
 	padding-left: 35px;
 	a {
 		text-decoration: none;
-		color: $lightblue;
+		color: $darkgrey;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 	}
 }
 
-.header {
-	background: url(../../assets/hero.jpeg);
-	height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
 .header__header {
 	position: absolute;
 	text-align: center;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	top: 30%;
 	left: 50%;
+	transform: translate(-50%,-50%);
+	color: $darkgrey;
+	width: 100%;
 	h1 {
-		color: $darkblue;
-		font-size: 4.5em;
+		font-size: 5.5em;
+		font-family: $secondaryfont;
+		font-weight: normal;
+	}
+	h2 {
+		font-family: $thirdfont;
+		font-size:1.4em;
+		letter-spacing: 1px;
+		font-weight: normal;
+		// line-height: 25px;
 	}
 }
