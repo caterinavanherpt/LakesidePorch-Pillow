@@ -176,13 +176,20 @@ body {
   font-size: 1.8em;
   font-family: "OctoberMoon", sans-serif; }
 
-.nav__accent {
+.nav__title-accent {
   text-transform: uppercase;
   color: #0089C4;
   font-size: 1.3em;
   letter-spacing: -1.5px;
   margin-left: 10px;
   margin-top: -16px; }
+
+.nav__title-description {
+  text-decoration: italic;
+  font-size: 1em;
+  letter-spacing: -0.3px;
+  margin-left: 20px;
+  margin-top: -8px; }
 
 .nav__list {
   list-style: none;
