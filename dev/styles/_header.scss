@@ -49,7 +49,7 @@
 
 .nav__title-description {
 	// text-transform: uppercase;
-	text-decoration: italic;
+	// text-decoration: 
 	// color: $lightblue;
 	font-size: 1em;
 	letter-spacing: -0.3px;
@@ -74,7 +74,7 @@
 		transition: all 0.2s ease-in;
 		font-size: 0.9em;
 	}
-	a:hover {
+	a:hover, a.active{
 		color: $lightblue;
 	}
 }

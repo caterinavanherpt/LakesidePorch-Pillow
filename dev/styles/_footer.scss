@@ -1,10 +1,6 @@
 .footer {
 	background: $grey;
-	// font-family: $thirdfont;
 	color: $darkgrey;
-	// margin-top: 3%;
-	// padding-top: 2%;
-	// border-top: solid 1.5px $darkgrey;
 	font-size: 1em;
 	letter-spacing: 1.5px;
 }
@@ -13,9 +9,45 @@
  	display: flex;
  	justify-content: space-between;
  	align-items: center;
+ 	padding: 2% 0;
+ }
+
+ .footer__item {
+ 	width: 30%;
+ }
+
+ .footer__item:nth-child(2) {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ .footer__item:nth-child(3) {
+ 	text-align: right;
+ 	button {
+		transition: all 0.2s ease-in;
+		border: 1px solid $lightblue;
+ 		color: $lightblue;
+ 		background: white;
+ 	}
+ 	button:hover {
+ 		background: $lightblue;
+		color: $darkblue;
+ 	}
  }
 
 .footer__logo {
-	max-width: 150px;
-	padding: 15% 0;
+	max-width: 130px;
+}
+
+.footer__copyright {
+	background-color: $darkgreythree;
+	display: flex;
+	justify-content: center;
+	font-size: 0.8em;
+	padding: 1% 0;
+	a {
+		text-decoration: none;
+		color: $darkgrey;
+	}
 }
