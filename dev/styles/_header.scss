@@ -27,10 +27,6 @@
 .nav__name {
 	width: 100%;
 	color: $darkblue;
-	// border-left: solid 1.5px $darkgrey;
-	p {
-		// padding-left: 1%;
-	}
 }
 
 .nav__title {
@@ -46,18 +42,6 @@
 	margin-left: 10px;
     margin-top: -16px;
 }
-
-.nav__title-description {
-	// text-transform: uppercase;
-	// text-decoration: 
-	// color: $lightblue;
-	font-size: 1em;
-	letter-spacing: -0.3px;
-	// font-family: $secondaryfont;
-	margin-left: 20px;
-	margin-top: -8px;
-}
-
 
 .nav__list {
 	list-style: none;
@@ -90,9 +74,27 @@
 		font-weight: normal;
 	}
 	h2 {
-		// font-family: $thirdfont;
 		font-size:1.4em;
-		// letter-spacing: 1px;
 		font-weight: 300;
 	}
 }
+
+.header__rooms {
+	padding-top: 4%;
+	h1 {
+		font-size: 4.2em;
+	}
+	h2 {
+		font-size: 1.1em;
+		padding-top: 1%;
+		padding-left: 10%;
+		padding-right: 10%;
+		letter-spacing: 0.5px;
+	}
+	h2:nth-child(3) {
+		padding-left: 17%;
+		padding-right: 17%;
+	}
+}
+
+

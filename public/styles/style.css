@@ -184,12 +184,6 @@ body {
   margin-left: 10px;
   margin-top: -16px; }
 
-.nav__title-description {
-  font-size: 1em;
-  letter-spacing: -0.3px;
-  margin-left: 20px;
-  margin-top: -8px; }
-
 .nav__list {
   list-style: none;
   display: flex; }
@@ -219,16 +213,42 @@ body {
     font-size: 1.4em;
     font-weight: 300; }
 
+.header__rooms {
+  padding-top: 4%; }
+  .header__rooms h1 {
+    font-size: 4.2em; }
+  .header__rooms h2 {
+    font-size: 1.1em;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    letter-spacing: 0.5px; }
+  .header__rooms h2:nth-child(3) {
+    padding-left: 17%;
+    padding-right: 17%; }
+
+.rooms__section {
+  padding-bottom: 5%; }
+
 .rooms__list {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  color: #3f4a55;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4em;
+  letter-spacing: 0.5px;
+  font-family: "OctoberMoon", sans-serif; }
 
 .rooms__list-item {
-  padding: 5% 0; }
+  padding-top: 5%; }
+  .rooms__list-item p {
+    padding-bottom: 15px; }
   .rooms__list-item img {
-    max-width: 550px; }
+    max-width: 550px;
+    border: solid 1px rgba(156, 165, 172, 0.39); }
 
 .footer {
   background: #C7C8CA;
