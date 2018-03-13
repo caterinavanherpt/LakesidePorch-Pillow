@@ -243,12 +243,37 @@ body {
   font-family: "OctoberMoon", sans-serif; }
 
 .rooms__list-item {
-  padding-top: 5%; }
+  padding-top: 7%; }
   .rooms__list-item p {
     padding-bottom: 15px; }
   .rooms__list-item img {
-    max-width: 550px;
+    width: 100%;
     border: solid 1px rgba(156, 165, 172, 0.39); }
+
+.gallery {
+  width: 550px; }
+
+.flickity-prev-next-button {
+  background: transparent; }
+
+.flickity-prev-next-button:hover {
+  background: transparent; }
+
+.flickity-prev-next-button .arrow {
+  fill: #C7C8CA; }
+
+.flickity-prev-next-button.no-svg {
+  color: #C7C8CA; }
+
+.flickity-prev-next-button:disabled {
+  display: none; }
+
+.room__rates {
+  color: #3f4a55;
+  text-align: center;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  padding-top: 7%; }
 
 .footer {
   background: #C7C8CA;
@@ -289,7 +314,7 @@ body {
   display: flex;
   justify-content: center;
   font-size: 0.8em;
-  padding: 1% 0; }
+  padding: 0.5% 0; }
   .footer__copyright a {
     text-decoration: none;
     color: #3f4a55; }

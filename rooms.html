@@ -8,9 +8,12 @@
 	<meta property="og:image" content=" "/>
 	<meta property="og:description" content=" "/>
 	<title>Lakeside Porch & Pillow</title>
+	<!-- link to flickity style sheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.min.css">
+	<!-- link to style sheet -->
 	<link rel="stylesheet" href="public/styles/style.css">
 	<!-- link to google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400|Roboto+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
 </head>
 <body>
 <header class="header header__rooms">
@@ -27,10 +30,10 @@
 					<a class="active" href="rooms.html">Rooms</a>
 				</li>
 				<li class="nav__list-item">
-					<a href="discover.html">Discover</a>
+					<a href="discoversoon.html">Discover</a>
 				</li>
 				<li class="nav__list-item">
-					<a href="contact.html">Contact</a>
+					<a href="contactsoon.html">Contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -44,22 +47,38 @@
 		<ul class="rooms__list">
 			<li class="rooms__list-item">
 				<p>King with Balcony</p>
-				<img src="assets/KingWithBalcony.jpeg" alt="King with Balcony Room">
+				<div class="gallery">
+					<img src="assets/King-1.jpeg" alt="King with Balcony Room - View of Balcony">
+					<img src="assets/King-2.jpg" alt="King with Balcony Room - Bed">
+					<img src="assets/King-3.jpg" alt="King with Balcony Room - Bathroom">
+					<img src="assets/King-4.jpg" alt="King with Balcony Room - Bathroom 2">
+				</div>
 			</li>
 			<li class="rooms__list-item">
 				<p>Queen with Balcony</p>
-				<img src="assets/QueenWithBalcony.jpg" alt="Queen with Balcony Room">
-			</li>
-			<li class="rooms__list-item">
-				<p>Double Queen Room</p>
-				<img src="assets/DoubleQueen.jpeg" alt="Double Queen Room">
+				<div class="gallery">
+					<img src="assets/Balcony Q-1.jpg" alt="Queen with Balcony Room - View of Balcony">
+					<img src="assets/Balcony Q-3.jpg" alt="Queen with Balcony Room - Bathroom">
+					<img src="assets/Balcony Q-4.jpg" alt="Queen with Balcony Room - Bathroom2">
+				</div>
 			</li>
 			<li class="rooms__list-item">
 				<p>Queen</p>
-				<img src="assets/Queen.jpg" alt="Queen Room">
+				<div class="gallery">
+					<img src="assets/Queen-1.jpg" alt="Queen Room - Day">
+					<img src="assets/Queen-2.jpg" alt="Queen Room - Night">
+					<img src="assets/Queen-3.jpg" alt="Queen Room - Bathroom">
+				</div>
+			</li>
+			<li class="rooms__list-item">
+				<p>Double Queen Room</p>
+				<div class="gallery">
+					<img src="assets/Double Q-1.jpeg" alt="Double Queen Room - Bed">
+					<img src="assets/Double Q-2.jpg" alt="Double Queen Room - Bathroom">
+				</div>
 			</li>
 		</ul>
-		<p>Room rates available upon request.</p>
+		<p class="room__rates">Room rates available upon request.</p>
 	</section>
 	<footer class="footer">
 		<div class="footer__contact-wrapper wrapper">
@@ -79,5 +98,10 @@
 			<p>Copyright &copy; Lakeside Porch & Pillow | Website by <a href="www.caterinavanherpt.com">Caterina</a></p>
 		</div>
 	</footer>
+	<!-- flickity plugin js files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+	<!-- link to our js file  -->
+	<script src="public/scripts/main.js"></script>
 </body>
 </html>

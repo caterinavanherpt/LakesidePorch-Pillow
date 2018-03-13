@@ -16,12 +16,44 @@
 }
 
 .rooms__list-item {
-	padding-top: 5%;
+	padding-top: 7%;
 	p {
 		padding-bottom: 15px;
 	}
 	img {
-		max-width: 550px;
+		width: 100%;
 		border: solid 1px rgba(156, 165, 172, 0.39);
 	}
 }
+
+.gallery {
+	width: 550px;
+}
+
+// /* big buttons, no circle */
+.flickity-prev-next-button {
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+// /* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: $grey;
+}
+.flickity-prev-next-button.no-svg {
+  color: $grey;
+}
+// /* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+.room__rates {
+	color: $darkgrey;
+	text-align: center;
+	font-size: 1.1em;
+	letter-spacing: 0.5px;
+	padding-top: 7%;
+}
+

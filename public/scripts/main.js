@@ -1,5 +1,8 @@
-"use strict";
+'use strict';
 
-var ohHey = "Hello World";
-
-console.log(ohHey);
+$(window).load(function () {
+    $('.gallery').flickity({
+        setgallerySize: false,
+        lazyload: 2
+    });
+});

@@ -1,3 +1,6 @@
-const ohHey = "Hello World";
-
-console.log(ohHey);
+$(window).load(function() {
+    $('.gallery').flickity({
+        setgallerySize: false,
+        lazyload: 2
+    });
+});
