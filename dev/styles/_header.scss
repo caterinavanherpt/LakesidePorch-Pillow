@@ -1,15 +1,9 @@
 .header__index {
 	background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.18), rgba(247, 232, 191, 0.24)), url(../../assets/hero.jpeg);
-	height: 700px;
+	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
-}
-
-.header__rooms {
-	.nav {
-		background-color: white;
-	}
 }
 
 .nav {
@@ -95,6 +89,39 @@
 		padding-left: 17%;
 		padding-right: 17%;
 	}
+	.nav {
+		background-color: white;
+	}
 }
 
+@include respond-to("medium") {
+	.header__index {
+		background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.58), rgba(247, 232, 191, 0.28)), url(../../assets/hero.jpeg);
+		background-position: center;
+	}
 
+	.header__header {
+		padding-top: 30%;
+	}
+
+	.header__rooms {
+		padding-top: 10%;
+	}
+}
+
+@include respond-to("small") {
+	.header__index {
+		height: 100vh;
+	}
+
+	.header__header {
+		padding-top: 40%;
+		h1 {
+			font-size: 4em;
+		}
+		h2 {
+			padding: 5%;
+			font-size: 1.2em;
+		}
+	}
+}

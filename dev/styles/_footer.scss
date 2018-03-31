@@ -51,3 +51,20 @@
 		color: $darkgrey;
 	}
 }
+
+@include respond-to("small") {
+	.footer__contact-wrapper {
+		display: block;
+		font-size: 0.8em;
+	}
+
+	.footer__item {
+		width: 100%;
+		text-align: center;
+		padding: 2% 0;
+	}
+
+	.footer__item:nth-child(3) {
+		text-align: center;
+	}
+}

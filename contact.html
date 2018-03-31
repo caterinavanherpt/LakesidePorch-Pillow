@@ -9,29 +9,36 @@
 	<meta property="og:description" content=" "/>
 	<title>Lakeside Porch & Pillow</title>
 	<link rel="stylesheet" href="public/styles/style.css">
-	<!-- link to fontello font (icons) -->
-	<link rel="stylesheet" href="fonts/fontello-ea2d0bb5/css/lakeside.css">
+	<!-- link to google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
 </head>
 <body>
-	<nav class="nav">
-		<div class="header__logo">
-			<img src="assets/logo.png" alt="">
+<header class="header header__rooms">
+		<nav class="nav">
+			<div class="nav__name">
+				<p class="nav__title">Lakeside</p>
+				<p class="nav__title-accent">Porch & Pillow</p>
+			</div>
+			<ul class="nav__list">
+				<li class="nav__list-item home">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="nav__list-item"> 
+					<a class="active" href="rooms.html">Rooms</a>
+				</li>
+				<li class="nav__list-item">
+					<a href="discoversoon.html">Discover</a>
+				</li>
+				<li class="nav__list-item">
+					<a href="contactsoon.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__header header__rooms wrapper">
+			<h1>Contact</h1>
+			<h2>Don't hesitate to get in touch...</h2>
 		</div>
-		<ul class="nav__list">
-			<li class="nav__list-item home">
-				<a href="index.html">Home</a>
-			</li>
-			<li class="nav__list-item"> 
-				<a href="rooms.html">Rooms</a>
-			</li>
-			<li class="nav__list-item">
-				<a href="discover.html">Discover</a>
-			</li>
-			<li class="nav__list-item">
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-	</nav>
+	</header>
 	<section>
 		<h1>Contact</h1>
 		<h2>Don't hesitate to get in touch...</h2>
@@ -77,18 +84,21 @@
 			</div>
 	</section>
 	<footer class="footer">
-		<div class="footer__contact-wrapper">
-			<div>
-				<p>123 Adelaide St,</p>
-				<p>Harrow Ontario, N0R 1G0 | 519-819-7154</p>
+		<div class="footer__contact-wrapper wrapper">
+			<div class="footer__item">
+				<p>Lakeside Porch & Pillow is a unique bed and breakfast located in the community of Colchester (Harrow), Ontario.</p>
+				<p>Come visit us!</p>
 			</div>
-			<div>
-				<button>Contact Us</button>
+			<div class="footer__item">
+				<img class ="footer__logo" src="assets/logo.png" alt="">
+			</div>
+			<div class="footer__item">
+				<p>123 Adelaide St, Harrow Ontario, N0R 1G0</p>
+				<p>519-819-7154 | <button>Contact Us</button></p>
 			</div>
 		</div>
 		<div class="footer__copyright">
-			<p>Copyright &copy; Lakeside Porch & Pillow </p>
-			<p>Website by <a href="www.caterinavanherpt.com">Caterina van Herpt</a></p>
+			<p>Copyright &copy; Lakeside Porch & Pillow | Website by <a href="www.caterinavanherpt.com">Caterina</a></p>
 		</div>
 	</footer>
 </body>
