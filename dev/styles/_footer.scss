@@ -14,6 +14,14 @@
 
  .footer__item {
  	width: 30%;
+ 	a {
+ 		color: $darkgrey;
+ 		text-decoration: none;
+ 		transition: all 0.2s ease-in;
+ 	}
+ 	a:hover {
+ 		color: $lightblue;
+ 	}
  }
 
  .footer__item:nth-child(2) {

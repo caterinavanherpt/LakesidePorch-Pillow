@@ -302,6 +302,35 @@ body {
     padding-left: 0;
     padding-right: 0; } }
 
+.contact__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: #3f4a55;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding-top: 2%; }
+  .contact__list li {
+    padding: 0 2%; }
+
+.contact__wrapper {
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 10%; }
+
+.contact__map, .contact__form--wrapper {
+  width: 50%; }
+
+.form__list {
+  list-style: none;
+  padding-left: 5%; }
+  .form__list label, .form__list p {
+    color: #3f4a55;
+    font-weight: 300;
+    letter-spacing: 0.5px; }
+  .form__list input {
+    width: 100%; }
+
 .footer {
   background: #C7C8CA;
   color: #3f4a55;
@@ -316,6 +345,12 @@ body {
 
 .footer__item {
   width: 30%; }
+  .footer__item a {
+    color: #3f4a55;
+    text-decoration: none;
+    transition: all 0.2s ease-in; }
+  .footer__item a:hover {
+    color: #0089C4; }
 
 .footer__item:nth-child(2) {
   display: flex;

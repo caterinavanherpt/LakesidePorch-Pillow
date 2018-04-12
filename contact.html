@@ -9,6 +9,8 @@
 	<meta property="og:description" content=" "/>
 	<title>Lakeside Porch & Pillow</title>
 	<link rel="stylesheet" href="public/styles/style.css">
+	<!-- link to fontello font (icons) -->
+	<link rel="stylesheet" href="fonts/fontello-ea2d0bb5/css/lakeside.css">
 	<!-- link to google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
 </head>
@@ -24,25 +26,22 @@
 					<a href="index.html">Home</a>
 				</li>
 				<li class="nav__list-item"> 
-					<a class="active" href="rooms.html">Rooms</a>
+					<a href="rooms.html">Rooms</a>
 				</li>
 				<li class="nav__list-item">
 					<a href="discoversoon.html">Discover</a>
 				</li>
 				<li class="nav__list-item">
-					<a href="contactsoon.html">Contact</a>
+					<a class="active" href="contactsoon.html">Contact</a>
 				</li>
 			</ul>
 		</nav>
 		<div class="header__header header__rooms wrapper">
-			<h1>Contact</h1>
-			<h2>Don't hesitate to get in touch...</h2>
+			<h1>Contact Us</h1>
 		</div>
 	</header>
-	<section>
-		<h1>Contact</h1>
-		<h2>Don't hesitate to get in touch...</h2>
-		<ul>
+	<section class="contact__section wrapper">
+		<ul class="contact__list">
 			<li>
 				<p><i class="icon-location"></i>123 Adelaide St, Harrow ON</p>
 			</li>
@@ -50,16 +49,19 @@
 				<p><i class="icon-phone"></i>519-819-7154</p>
 			</li>
 			<li>
-				<p><i class="icon-mail"></i>email@email.com</p>
+				<p><i class="icon-mail"></i>info@lakesideporchandpillow.ca </p>
 			</li>
 		</ul>
-		<div class="contact__wrapper wrapper__small">
+		<div class="contact__wrapper">
 			<div class="contact__map">
-				<!-- insert snazzy maps here -->
+				<iframe src="https://snazzymaps.com/embed/63829" width="100%" height="400px" style="border:none;"></iframe>
 			</div>
 			<div class="contact__form--wrapper">
 				<form action="" class="contact__form">
 					<ul class="form__list">
+						<li>
+							<p>Don't hesitate to get in touch...</p>
+						</li>
 						<li>
 							<label for="name">Name</label>
 							<input type="text" name="name">
@@ -93,8 +95,9 @@
 				<img class ="footer__logo" src="assets/logo.png" alt="">
 			</div>
 			<div class="footer__item">
+				<a href="info@lakesideporchandpillow.ca">info@lakesideporchandpillow.ca</a>
 				<p>123 Adelaide St, Harrow Ontario, N0R 1G0</p>
-				<p>519-819-7154 | <button>Contact Us</button></p>
+				<p>519-819-7154 | <a href="contact.html"><button>Contact Us</button></a></p>
 			</div>
 		</div>
 		<div class="footer__copyright">
