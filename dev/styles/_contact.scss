@@ -9,6 +9,16 @@
 	li {
 		padding: 0 2%;
 	}
+	a {
+		text-decoration: none;
+		color: $darkgrey;
+		font-weight: 300;
+		letter-spacing: 0.5px;
+		transition: all 0.2s ease-in;
+	}
+	a:hover {
+		color: $lightblue;
+	}
 }
 
 .contact__wrapper {
@@ -22,14 +32,68 @@
 }
 
 .form__list {
+	padding-left: 10%;
+	width: 85%;
 	list-style: none;
-	padding-left: 5%;
+	li {
+		padding: 2%;
+	}
+	p {
+		text-align: center;
+	}
 	label, p {
 		color: $darkgrey;
 		font-weight: 300;
 		letter-spacing: 0.5px;
 	}
-	input {
+	input, textarea {
+		width: 100%;
+		color: $lightblue;
+		font-weight: 300;
+		letter-spacing: 0.5px;
+		border: 1px solid $darkgreythree;
+	}
+	button {
+		transition: all 0.2s ease-in;
+		letter-spacing: 0.5px;
+		border: 1px solid $lightblue;
+ 		color: $lightblue;
+ 		background: white;
+ 		width: 100%;
+ 		margin-top: 2%;
+ 	}
+ 	button:hover {
+ 		background: $lightblue;
+		color: $darkblue;
+ 	}
+}
+
+@include respond-to("medium") {
+	.contact__wrapper {
+		display: block;
+		padding-bottom: 20%;
+	}
+	.contact__map, .contact__form--wrapper {
+		width: 100%;
+	}
+}
+
+@include respond-to("small") {
+	.header__contact {
+		h1 {
+			font-size: 3em;
+		}
+	}
+	.contact__map {
+		height: 50%;
+	}
+	.contact__list {
+		display: block;
+		padding: 10% 0;
+		text-align: center;
+	}
+	.form__list {
+		padding-left: 0%;
 		width: 100%;
 	}
 }

@@ -11,7 +11,7 @@ gulp.task('styles', () => {
 	return gulp.src('./dev/styles/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('style.css'))
-		.pipe(gulp.dest('./public/styles/'))
+		.pipe(gulp.dest('./styles/'))
 });
 
 //a task to compile our javascript 
@@ -20,7 +20,7 @@ gulp.task('scripts', () => {
 		.pipe(babel({
 			presets: ['es2015']
 		}))
-		.pipe(gulp.dest('./public/scripts/'))
+		.pipe(gulp.dest('./scripts/'))
 });
 
 //a task to reload html on save

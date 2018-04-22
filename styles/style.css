@@ -210,28 +210,26 @@ body {
     font-size: 1.4em;
     font-weight: 300; }
 
-.header__rooms {
-  padding-top: 4%; }
-  .header__rooms h1 {
+.header__rooms, .header__contact {
+  padding-top: 6%; }
+  .header__rooms h1, .header__contact h1 {
     font-size: 4.2em; }
-  .header__rooms h2 {
+  .header__rooms h2, .header__contact h2 {
     font-size: 1.1em;
     padding-top: 1%;
     padding-left: 10%;
     padding-right: 10%;
     letter-spacing: 0.5px; }
-  .header__rooms h2:nth-child(3) {
+  .header__rooms h2:nth-child(3), .header__contact h2:nth-child(3) {
     padding-left: 17%;
     padding-right: 17%; }
-  .header__rooms .nav {
+  .header__rooms .nav, .header__contact .nav {
     background-color: white; }
 
 @media (max-width: 950px) {
   .header__index {
     background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.58), rgba(247, 232, 191, 0.28)), url(../../assets/hero.jpeg);
     background-position: center; }
-  .header__header {
-    padding-top: 30%; }
   .header__rooms {
     padding-top: 10%; } }
 
@@ -312,6 +310,14 @@ body {
   padding-top: 2%; }
   .contact__list li {
     padding: 0 2%; }
+  .contact__list a {
+    text-decoration: none;
+    color: #3f4a55;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in; }
+  .contact__list a:hover {
+    color: #0089C4; }
 
 .contact__wrapper {
   display: flex;
@@ -322,14 +328,54 @@ body {
   width: 50%; }
 
 .form__list {
-  list-style: none;
-  padding-left: 5%; }
+  padding-left: 10%;
+  width: 85%;
+  list-style: none; }
+  .form__list li {
+    padding: 2%; }
+  .form__list p {
+    text-align: center; }
   .form__list label, .form__list p {
     color: #3f4a55;
     font-weight: 300;
     letter-spacing: 0.5px; }
-  .form__list input {
-    width: 100%; }
+  .form__list input, .form__list textarea {
+    width: 100%;
+    color: #0089C4;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    border: 1px solid #adb0b4; }
+  .form__list button {
+    transition: all 0.2s ease-in;
+    letter-spacing: 0.5px;
+    border: 1px solid #0089C4;
+    color: #0089C4;
+    background: white;
+    width: 100%;
+    margin-top: 2%; }
+  .form__list button:hover {
+    background: #0089C4;
+    color: #052E70; }
+
+@media (max-width: 950px) {
+  .contact__wrapper {
+    display: block;
+    padding-bottom: 20%; }
+  .contact__map, .contact__form--wrapper {
+    width: 100%; } }
+
+@media (max-width: 680px) {
+  .header__contact h1 {
+    font-size: 3em; }
+  .contact__map {
+    height: 50%; }
+  .contact__list {
+    display: block;
+    padding: 10% 0;
+    text-align: center; }
+  .form__list {
+    padding-left: 0%;
+    width: 100%; } }
 
 .footer {
   background: #C7C8CA;
