@@ -8,46 +8,139 @@
 	<meta property="og:image" content=" "/>
 	<meta property="og:description" content=" "/>
 	<title>Lakeside Porch & Pillow</title>
-	<link rel="stylesheet" href="public/styles/style.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="hamburgers.min.css">
+	<!-- link to google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
 </head>
 <body>
-	<nav class="nav">
-		<div class="header__logo">
-			<img src="assets/logo.png" alt="">
+<header class="header header__rooms">
+		<nav class="nav">
+			<div class="nav__header-wrapper">
+				<div class="nav__ham">
+					<button class="hamburger hamburger--squeeze" type="button">
+					  <span class="hamburger-box">
+					    <span class="hamburger-inner"></span>
+					    <span class="hamburger-label">Menu</span>
+					  </span>
+					</button> 
+				</div>
+				<div class="nav__name">
+					<p class="nav__title">Lakeside</p>
+					<p class="nav__title-accent">Porch & Pillow</p>
+				</div>
+			</div>
+			<ul class="nav__list hide">
+				<li class="nav__list-item home">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="nav__list-item"> 
+					<a href="rooms.html">Rooms</a>
+				</li>
+				<li class="nav__list-item">
+					<a class="active" href="discover.html">Discover</a>
+				</li>
+				<li class="nav__list-item">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__header header__rooms wrapper">
+			<h1>Everything You Need</h1>
+			<h2>Located in the heart of Essex County wine country, enjoy visiting wineries and a new brewery, just minutes away.  Take a 5 minute walk to Colchester Beach & Marina where there are many things to do like fish, play beach volleyball, rent a paddle board or a paddle boat to cruise around on.  For those who like to just sit and relax, it’s the perfect place. The gazebo is under renovation, but will be open mid summer for another area of relaxation at the water’s edge.</h2>
 		</div>
-		<ul class="nav__list">
-			<li class="nav__list-item home">
-				<a href="index.html">Home</a>
+	</header>
+	<section class="gallery__discover wrapper">
+		<!-- <h1 class="">Gallery</h1> -->
+		<div class="gallery__layout">
+			<div class="gallery__layout-panel">
+				<div class="gallery__layout-panel-content">
+					<img src="assets/gallery/Front view of house.jpg" alt="">
+					<img src="assets/gallery/Main porch-sunrise.jpg" alt="">
+					<img src="assets/gallery/Upstairs Lounge-2.jpg" alt="">
+				</div>
+			</div>
+			<div class="gallery__layout-panel">
+				<div class="gallery__layout-panel-content">
+					<img src="assets/gallery/Back view of house - waiting for new pic.jpg" alt="">
+					<img src="assets/gallery/Lower Veranda-1.jpg" alt="">
+					<img src="assets/gallery/Main Floor-2.jpg" alt="">
+				</div>
+			</div>
+			<div class="gallery__layout-panel">
+				<div class="gallery__layout-panel-content">
+					<img src="assets/gallery/main porch.jpg" alt="">
+					<img src="assets/gallery/Lower veranda-3.jpg" alt="">
+					<img src="assets/gallery/Upstairs Lounge-3.jpg" alt="">
+					<img src="assets/gallery/Upstairs Lounge-1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="local__attractions wrapper">
+		<h1 class="local__attractions-header">Local Attractions</h1>
+		<ul class="local__attractions-list">
+			<li class="la-list_item">
+				<h2>Wineries</h2>
+				<a href="http://www.colchesterridge.com/#sthash.auxio9RC.dpbs">CREW</a>
+				 <a href="https://north42degrees.com/">North 42 Degrees </a>
+				 <a href="http://www.coliowinery.com/">Colio Winery</a>
+				 <a href="http://www.viewpointewinery.com/">Viewpointe Winery </a>
+				 <a href="http://oxleyestatewinery.com/">Oxley Estate Winery </a>
+				 <a href="http://muscederevineyards.com/">Muscedere Vineyards </a>
+				 <a href="https://www.sprucewoodshores.com/">Sprucewood Shores </a>
+				 <a href="http://www.peleeisland.com/">Pelee Island Winery </a>
+				 <p>& several others</p>
 			</li>
-			<li class="nav__list-item"> 
-				<a href="rooms.html">Rooms</a>
+			<li class="la-list_item">
+				<h2>Brewery & Distillery</h2>
+				<a href="https://www.drinkwolfhead.com/home/">Wolfhead Distillery </a>
+				<a href="http://www.glheritagebrewing.ca/">GL Heritage Brewing Co.</a>
+				<h2>Food</h2>
+				<a href="https://www.facebook.com/garfieldscolchester/">Garfield's </a>
+				<a href="http://www.naplespizza.com/menu/harrow.html">Naples Pizza </a>
+				<a href="http://www.dock21.pub/home.html">Dock 21 Pub </a>
 			</li>
-			<li class="nav__list-item">
-				<a href="discover.html">Discover</a>
+			<li class="la-list_item">
+				<h2>Golf</h2>
+				<a href="http://www.oxleybeachgolf.com/">Oxley Beach Golf Course </a>
+				<a href="http://www.foxglengolfclub.com/">Fox Glen Golf Club </a>
+				<a href="https://www.kingsvillegolf.com/">Kingsville Golf & Country Club </a>
+				<a href="https://suttoncreekgolf.com/">Sutton Creek Golf Club </a>
 			</li>
-			<li class="nav__list-item">
-				<a href="contact.html">Contact</a>
+			<li class="la-list_item">
+				<h2>Other Local Attractions</h2>
+				<a href="https://www.essex.ca/en/play/beachandharbour.asp">Colchester Beach & Marina – fishing charters, snack bar, ice cream, paddleboat and paddle board rentals</a>
+				<a href="https://www.pc.gc.ca/en/pn-np/on/pelee">Point Pelee National Park & Pelee Island </a>
+				<a href="http://erca.org/conservation-areas-events/conservation-areas/john-r-park-homestead/">John R Park Homestead </a>
+				<a href="http://erca.org/conservation-areas-events/conservation-areas/holiday-beach/">Holiday Beach </a>
+				<a href="http://blimeys.ca/">Blimey’s British Store & Gift Shop</a>
 			</li>
 		</ul>
-	</nav>
-	<section>
-		<h1>Everything You Need</h1>
-		<h2>Located in the heart of Essex County wine country, enjoy visiting wineries and a new brewery, just minutes away.  Take a 5 minute walk to Colchester Beach & Marina where there are many things to do like fish, play beach volleyball, rent a paddle board or a paddle boat to cruise around on.  For those who like to just sit and relax, it’s the perfect place. The gazebo is under renovation, but will be open mid summer for another area of relaxation at the water’s edge.</h2>
 	</section>
 	<footer class="footer">
-		<div class="footer__contact-wrapper">
-			<div>
-				<p>123 Adelaide St,</p>
-				<p>Harrow Ontario, N0R 1G0 | 519-819-7154</p>
+		<div class="footer__contact-wrapper wrapper">
+			<div class="footer__item">
+				<p>Lakeside Porch & Pillow is a unique bed and breakfast located in the community of Colchester (Harrow), Ontario.</p>
+				<p>Come visit us!</p>
 			</div>
-			<div>
-				<button>Contact Us</button>
+			<div class="footer__item">
+				<img class ="footer__logo" src="assets/logo.png" alt="">
+			</div>
+			<div class="footer__item">
+				<a href="info@lakesideporchandpillow.ca">info@lakesideporchandpillow.ca</a>
+				<p>123 Adelaide St, Harrow Ontario, N0R 1G0</p>
+				<p>519-819-7154 | <a href="contact.html"><button>Contact Us</button></a></p>
 			</div>
 		</div>
 		<div class="footer__copyright">
-			<p>Copyright &copy; Lakeside Porch & Pillow </p>
-			<p>Website by <a href="www.caterinavanherpt.com">Caterina van Herpt</a></p>
+			<p>Copyright &copy; Lakeside Porch & Pillow | Website by <a href="www.caterinavanherpt.com">Caterina</a></p>
 		</div>
 	</footer>
+	<!-- flickity plugin js files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+	<!-- link to our js file  -->
+	<script src="main.js"></script>
 </body>
 </html>

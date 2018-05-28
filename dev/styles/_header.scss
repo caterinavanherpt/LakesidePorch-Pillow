@@ -15,7 +15,17 @@
 	align-items: center;
 	z-index: 1;
 	padding: 2% 10%;
+}
 
+.nav__ham {
+	display: flex;
+	.hamburger {
+		display: none;
+	}
+}
+
+.hamburger-label {
+	padding-left: 50px;
 }
 
 .nav__name {
@@ -95,9 +105,63 @@
 }
 
 @include respond-to("medium") {
+	.nav {
+		display: block;
+	}
+
+	.nav__header-wrapper {
+		display: flex;
+	}
+
+	.nav__ham {
+		display: flex;
+		align-items: center;
+		.hamburger {
+			display: inline-block;
+			padding-right: 0;
+		}
+	}
+
+	.show {
+		height: 100vh;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 10%;
+	}
+
+	.nav__show {
+		background: white;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.nav__list {
+		padding-top: 50px;
+	}
+
+	.nav__list-item {
+		padding: 20px 0;
+		a {
+			padding: 20px 0;
+		}
+	}
+
+	.nav__name {
+		padding-left: 200px;
+	}
+
+	.header__header {
+		padding-top: 250px;
+	}
+
 	.header__index {
 		background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.58), rgba(247, 232, 191, 0.28)), url(../../assets/hero.jpeg);
+		height: 100vh;
 		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.header__rooms {
 		padding-top: 10%;
@@ -105,6 +169,11 @@
 }
 
 @include respond-to("small") {
+	.nav__name {
+		text-align: right;
+		padding-left: 0;
+	}
+
 	.header__index {
 		height: 100vh;
 	}

@@ -165,6 +165,14 @@ body {
   z-index: 1;
   padding: 2% 10%; }
 
+.nav__ham {
+  display: flex; }
+  .nav__ham .hamburger {
+    display: none; }
+
+.hamburger-label {
+  padding-left: 50px; }
+
 .nav__name {
   width: 100%;
   color: #052E70; }
@@ -227,13 +235,48 @@ body {
     background-color: white; }
 
 @media (max-width: 950px) {
+  .nav {
+    display: block; }
+  .nav__header-wrapper {
+    display: flex; }
+  .nav__ham {
+    display: flex;
+    align-items: center; }
+    .nav__ham .hamburger {
+      display: inline-block;
+      padding-right: 0; }
+  .show {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%; }
+  .nav__show {
+    background: white; }
+  .hide {
+    display: none; }
+  .nav__list {
+    padding-top: 50px; }
+  .nav__list-item {
+    padding: 20px 0; }
+    .nav__list-item a {
+      padding: 20px 0; }
+  .nav__name {
+    padding-left: 200px; }
+  .header__header {
+    padding-top: 250px; }
   .header__index {
     background: linear-gradient(rgba(249, 224, 178, 0), rgba(249, 224, 178, 0.58), rgba(247, 232, 191, 0.28)), url(../../assets/hero.jpeg);
-    background-position: center; }
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .header__rooms {
     padding-top: 10%; } }
 
 @media (max-width: 680px) {
+  .nav__name {
+    text-align: right;
+    padding-left: 0; }
   .header__index {
     height: 100vh; }
   .header__header {
@@ -296,9 +339,77 @@ body {
   .rooms__list {
     justify-content: center;
     padding-top: 8%; }
+  .rooms__list-item {
+    padding-top: 20%; }
   .header__rooms h2:nth-child(3) {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .rooms__section {
+    padding-bottom: 20%; } }
+
+@media (max-width: 680px) {
+  .gallery {
+    max-width: 300px; } }
+
+.gallery__discover {
+  padding-top: 20px; }
+
+.gallery__layout {
+  column-count: 3;
+  column-gap: 0; }
+
+.gallery__layout-panel {
+  break-inside: avoid; }
+
+.gallery__layout-panel-content {
+  padding: 5px; }
+  .gallery__layout-panel-content img {
+    border: 1px solid #C7C8CA;
+    border-radius: 1px;
+    margin: 5px 0;
+    max-width: 100%; }
+
+.local__attractions {
+  padding: 60px 0; }
+
+.local__attractions-header {
+  color: #3f4a55;
+  font-family: "OctoberMoon", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center; }
+
+.local__attractions-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  padding: 40px 0; }
+
+.la-list_item {
+  width: 33%; }
+  .la-list_item h2 {
+    padding-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #3f4a55;
+    font-size: 1em;
+    padding-bottom: 20px; }
+  .la-list_item a, .la-list_item p {
+    text-decoration: none;
+    display: block;
+    letter-spacing: 1.5px;
+    font-size: 0.9em;
+    padding: 5px; }
+  .la-list_item a {
+    transition: all 0.2s ease-in;
+    color: #adb0b4; }
+  .la-list_item a:hover {
+    color: #0089C4; }
+  .la-list_item p {
+    color: #3f4a55; }
 
 .contact__list {
   list-style: none;

@@ -11,7 +11,7 @@ gulp.task('styles', () => {
 	return gulp.src('./dev/styles/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('style.css'))
-		.pipe(gulp.dest('./styles/'))
+		.pipe(gulp.dest('./'))
 });
 
 //a task to compile our javascript 
@@ -20,7 +20,7 @@ gulp.task('scripts', () => {
 		.pipe(babel({
 			presets: ['es2015']
 		}))
-		.pipe(gulp.dest('./scripts/'))
+		.pipe(gulp.dest('./'))
 });
 
 //a task to reload html on save
@@ -46,7 +46,8 @@ gulp.task('watch', () => {
 	gulp.watch('./dev/styles/**/*.scss', ['styles']);
 	gulp.watch('./dev/scripts/main.js', ['scripts']);
 	gulp.watch('*.html', ['html']);
-	gulp.watch('./public/**', reload);
+	gulp.watch('style.css', reload);
+	gulp.watch('main.js', reload);
 });
 
 //runs our all of our tasks

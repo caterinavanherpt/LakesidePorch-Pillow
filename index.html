@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- meta tag for responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- meta tags to handle how the site shows up on facebook posts -->
 	<meta property="og:image" content=" "/>
 	<meta property="og:description" content=" "/>
 	<title>Lakeside Porch & Pillow</title>
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="hamburgers.min.css">
 	<!-- link to google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
 </head>
 <body>
 	<header class="header header__index">
 		<nav class="nav">
-			<div class="nav__name">
-				<p class="nav__title">Lakeside</p>
-				<p class="nav__title-accent">Porch & Pillow</p>
+			<div class="nav__header-wrapper">
+				<div class="nav__ham">
+					<button class="hamburger hamburger--squeeze" type="button">
+					  <span class="hamburger-box">
+					    <span class="hamburger-inner"></span>
+					    <span class="hamburger-label">Menu</span>
+					  </span>
+					</button> 
+				</div>
+				<div class="nav__name">
+					<p class="nav__title">Lakeside</p>
+					<p class="nav__title-accent">Porch & Pillow</p>
+				</div>
 			</div>
-			<ul class="nav__list">
+			<ul class="nav__list hide">
 				<li class="nav__list-item home">
 					<a class="active" href="index.html">Home</a>
 				</li>
@@ -27,7 +37,7 @@
 					<a href="rooms.html">Rooms</a>
 				</li>
 				<li class="nav__list-item">
-					<a href="discoversoon.html">Discover</a>
+					<a href="discover.html">Discover</a>
 				</li>
 				<li class="nav__list-item">
 					<a href="contact.html">Contact</a>
@@ -58,6 +68,10 @@
 			<p>Copyright &copy; Lakeside Porch & Pillow | Website by <a href="www.caterinavanherpt.com">Caterina</a></p>
 		</div>
 	</footer>
-	<!-- <script src="public/scripts/main.js"></script> -->
+	<!-- flickity plugin js files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+	<!-- link to our js file  -->
+	<script src="main.js"></script>
 </body>
 </html>

@@ -63,8 +63,24 @@
 		padding-top: 8%;
 	}
 
+	.rooms__list-item {
+		padding-top: 20%;
+	}
+
 	.header__rooms h2:nth-child(3) {
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+	.rooms__section {
+		padding-bottom: 20%;
+	}
+}
+
+@include respond-to("small") {
+	.gallery {
+		max-width: 300px;
+	}
+
+
 }
