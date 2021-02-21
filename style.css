@@ -280,12 +280,14 @@ body {
   .header__index {
     height: 100vh; }
   .header__header {
-    padding-top: 40%; }
+    padding-top: 20%; }
     .header__header h1 {
       font-size: 4em; }
     .header__header h2 {
       padding: 5%;
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+  .header--home {
+    padding-top: 40%; } }
 
 .rooms__section {
   padding-bottom: 5%; }
@@ -303,15 +305,17 @@ body {
   font-family: "OctoberMoon", sans-serif; }
 
 .rooms__list-item {
-  padding-top: 7%; }
+  padding-top: 7%;
+  width: 50%; }
   .rooms__list-item p {
     padding-bottom: 15px; }
-  .rooms__list-item img {
-    width: 100%;
-    border: solid 1px rgba(156, 165, 172, 0.39); }
 
-.gallery {
-  width: 550px; }
+.gallery-image {
+  width: 50%; }
+
+.gallery.is-fullscreen .gallery-image {
+  height: auto;
+  max-height: 100%; }
 
 .flickity-prev-next-button {
   background: transparent; }
@@ -328,6 +332,9 @@ body {
 .flickity-prev-next-button:disabled {
   display: none; }
 
+.flickity-viewport {
+  transition: height 0.2s; }
+
 .room__rates {
   color: #3f4a55;
   text-align: center;
@@ -335,17 +342,18 @@ body {
   letter-spacing: 0.5px;
   padding-top: 7%; }
 
-@media (max-width: 950px) {
+@media (max-width: 1380px) {
   .rooms__list {
-    justify-content: center;
-    padding-top: 8%; }
-  .rooms__list-item {
-    padding-top: 20%; }
+    justify-content: center; }
   .header__rooms h2:nth-child(3) {
     padding-left: 0;
     padding-right: 0; }
   .rooms__section {
     padding-bottom: 20%; } }
+
+@media (max-width: 950px) {
+  .rooms__list-item {
+    padding-top: 20%; } }
 
 @media (max-width: 680px) {
   .gallery {

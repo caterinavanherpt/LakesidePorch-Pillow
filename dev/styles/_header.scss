@@ -179,7 +179,7 @@
 	}
 
 	.header__header {
-		padding-top: 40%;
+		padding-top: 20%;
 		h1 {
 			font-size: 4em;
 		}
@@ -187,5 +187,9 @@
 			padding: 5%;
 			font-size: 1.2em;
 		}
+	}
+
+	.header--home {
+		padding-top: 40%;
 	}
 }
