@@ -17,17 +17,19 @@
 
 .rooms__list-item {
 	padding-top: 7%;
+	width: 50%;
 	p {
 		padding-bottom: 15px;
 	}
-	img {
-		width: 100%;
-		border: solid 1px rgba(156, 165, 172, 0.39);
-	}
 }
 
-.gallery {
-	width: 550px;
+.gallery-image {
+	width: 50%;
+}
+
+.gallery.is-fullscreen .gallery-image {
+	height: auto;
+	max-height: 100%;
 }
 
 // /* big buttons, no circle */
@@ -49,6 +51,11 @@
   display: none;
 }
 
+// use transition to transition photo height changes
+.flickity-viewport {
+	transition: height 0.2s;
+}
+
 .room__rates {
 	color: $darkgrey;
 	text-align: center;
@@ -57,14 +64,10 @@
 	padding-top: 7%;
 }
 
-@include respond-to("medium") {
+@include respond-to("large") {
 	.rooms__list {
 		justify-content: center;
-		padding-top: 8%;
-	}
-
-	.rooms__list-item {
-		padding-top: 20%;
+		// padding-top: 8%;
 	}
 
 	.header__rooms h2:nth-child(3) {
@@ -74,6 +77,12 @@
 
 	.rooms__section {
 		padding-bottom: 20%;
+	}
+}
+
+@include respond-to("medium") {
+	.rooms__list-item {
+		padding-top: 20%;
 	}
 }
 

@@ -9,12 +9,15 @@
 	<meta property="og:description" content=" "/>
 	<title>Lakeside Porch & Pillow</title>
 	<!-- link to flickity style sheet -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
 	<!-- link to style sheet -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="hamburgers.min.css">
 	<!-- link to google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 </head>
 <body>
 <header class="header header__rooms">
@@ -55,39 +58,39 @@
 		</div>
 	</header>
 	<section class="rooms__section wrapper">
-		<ul class="rooms__list">
-			<li class="rooms__list-item">
-				<p>King with Balcony</p>
-				<div class="gallery">
-					<img src="assets/King-1.jpeg" alt="King with Balcony Room - View of Balcony">
-					<img src="assets/King-2.jpg" alt="King with Balcony Room - Bed">
-					<img src="assets/King-3.jpg" alt="King with Balcony Room - Bathroom">
-					<img src="assets/King-4.jpg" alt="King with Balcony Room - Bathroom 2">
-				</div>
-			</li>
-			<li class="rooms__list-item">
+		<div class="rooms__list-item">
+			<p>King with Balcony</p>
+			<div class="gallery">
+				<img class="gallery-image" data-flickity-lazyload="assets/King-1.jpg" alt="King with Balcony Room - Bed">
+				<img class="gallery-image" data-flickity-lazyload="assets/King-2.jpg" alt="King with Balcony Room - View of Balcony">
+				<img class="gallery-image" data-flickity-lazyload="assets/King-5.jpg" alt="King with Balcony Room - Balcony View">
+				<img class="gallery-image" data-flickity-lazyload="assets/King-3.jpg" alt="King with Balcony Room - Bathroom">
+				<img class="gallery-image" data-flickity-lazyload="assets/King-4.jpg" alt="King with Balcony Room - Bathroom 2">
+			</div>
+			<!-- <li class="rooms__list-item">
 				<p>Queen with Balcony</p>
 				<div class="gallery">
 					<img src="assets/Balcony Q-1.jpg" alt="Queen with Balcony Room - View of Balcony">
+					<img src="assets/Balcony Q-2.jpg" alt="Queen with Balcony Room - View of Balcony 2">
+					<img src="assets/Balcony Q-5.jpg" alt="Queen with Balcony Room - Balcony View">
 					<img src="assets/Balcony Q-3.jpg" alt="Queen with Balcony Room - Bathroom">
-					<img src="assets/Balcony Q-4.jpg" alt="Queen with Balcony Room - Bathroom2">
+					<img src="assets/Balcony Q-4.jpg" alt="Queen with Balcony Room - Bathroom 2">
 				</div>
-			</li>
-			<li class="rooms__list-item">
+			</li> -->
+			<div class="rooms__list-item">
 				<p>Queen</p>
 				<div class="gallery">
-					<img src="assets/Queen-1.jpg" alt="Queen Room - Day">
-					<img src="assets/Queen-2.jpg" alt="Queen Room - Night">
-					<img src="assets/Queen-3.jpg" alt="Queen Room - Bathroom">
+					<img class="gallery-image" data-flickity-lazyload="assets/Queen-2.jpg" alt="Queen Room - View of room">
+					<img class="gallery-image" data-flickity-lazyload="assets/Queen-1.jpg" alt="Queen Room - Bed">
 				</div>
-			</li>
-			<li class="rooms__list-item">
+			</div>
+			<!-- <li class="rooms__list-item">
 				<p>Double Queen Room</p>
 				<div class="gallery">
-					<img src="assets/Double Q-1.jpeg" alt="Double Queen Room - Bed">
-					<img src="assets/Double Q-2.jpg" alt="Double Queen Room - Bathroom">
+					<img src="assets/Double Q-2.jpg" alt="Double Queen Room - Bed">
+					<img src="assets/Double Q-1.jpg" alt="Double Queen Room - View of room">
 				</div>
-			</li>
+			</li> -->
 		</ul>
 		<p class="room__rates">Room rates available upon request.</p>
 	</section>
@@ -112,7 +115,8 @@
 	</footer>
 	<!-- flickity plugin js files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
 	<!-- link to our js file  -->
 	<script src="main.js"></script>
 </body>
