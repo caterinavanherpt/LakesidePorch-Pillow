@@ -11,7 +11,6 @@ $(function() {
     $('.gallery').flickity({
         cellAlign: 'center',
 		draggable: true,
-		wrapAround: true,
 		fullscreen: true
     });
 });

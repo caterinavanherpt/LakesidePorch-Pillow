@@ -333,7 +333,22 @@ body {
 
 @media (max-width: 680px) {
   .gallery-image {
-    height: 200px; } }
+    height: 200px; }
+  .rooms__list-item h3 {
+    margin: 40px 0 10px; }
+  /* fullscreen */
+  .gallery.is-fullscreen .gallery-image {
+    width: 100%;
+    height: auto;
+    /* vertically center */
+    display: block;
+    top: 50%;
+    transform: translateY(-50%); }
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px; }
+  .room__rates {
+    padding: 14% 0; } }
 
 .gallery__discover {
   padding-top: 20px; }
