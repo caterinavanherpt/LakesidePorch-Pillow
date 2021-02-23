@@ -17,7 +17,5 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0"
   },
-  "dependencies": {
-    "flickity": "^2.2.2"
-  }
+  "dependencies": {}
 }

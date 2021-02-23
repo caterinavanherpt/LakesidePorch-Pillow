@@ -1,95 +1,58 @@
 .rooms__section {
-	padding-bottom: 5%;
-}
-
-.rooms__list {
 	display: flex;
-	list-style: none;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	color: $darkgrey;
+    flex-wrap: wrap;
 	text-align: center;
-	font-weight: 300;
-	font-size: 1.4em;
-	letter-spacing: 0.5px;
-	font-family: $secondaryfont;
 }
 
 .rooms__list-item {
 	padding-top: 7%;
-	width: 50%;
-	p {
+	width: 45%;
+	margin: 0 auto;
+	h3 {
 		padding-bottom: 15px;
+		font-weight: 300;
+		font-size: 1.4em;
+		letter-spacing: 0.5px;
+		font-family: $secondaryfont;
+		color: $darkgrey;
+		text-align: center;
 	}
 }
 
 .gallery-image {
-	width: 50%;
+	height: 350px;
+	margin-right: 10px;
 }
 
+/* fullscreen */
 .gallery.is-fullscreen .gallery-image {
-	height: auto;
-	max-height: 100%;
-}
+	height: 100%;
+  }
 
-// /* big buttons, no circle */
-.flickity-prev-next-button {
-  background: transparent;
-}
-.flickity-prev-next-button:hover {
-  background: transparent;
-}
-// /* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: $grey;
-}
-.flickity-prev-next-button.no-svg {
-  color: $grey;
-}
-// /* hide disabled button */
-.flickity-prev-next-button:disabled {
-  display: none;
-}
-
-// use transition to transition photo height changes
-.flickity-viewport {
-	transition: height 0.2s;
-}
 
 .room__rates {
 	color: $darkgrey;
 	text-align: center;
 	font-size: 1.1em;
 	letter-spacing: 0.5px;
-	padding-top: 7%;
+	padding: 7% 0;
 }
 
 @include respond-to("large") {
-	.rooms__list {
-		justify-content: center;
-		// padding-top: 8%;
-	}
-
 	.header__rooms h2:nth-child(3) {
 		padding-left: 0;
 		padding-right: 0;
-	}
-
-	.rooms__section {
-		padding-bottom: 20%;
 	}
 }
 
 @include respond-to("medium") {
 	.rooms__list-item {
-		padding-top: 20%;
+		width: 100%
 	}
 }
 
 @include respond-to("small") {
-	.gallery {
-		max-width: 300px;
+	.gallery-image {
+		height: 200px;
 	}
-
-
 }

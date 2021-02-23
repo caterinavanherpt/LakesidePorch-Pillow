@@ -10,7 +10,9 @@ $(function () {
 				});
 
 				$('.gallery').flickity({
-								setgallerySize: false,
-								lazyload: 2
+								cellAlign: 'center',
+								draggable: true,
+								wrapAround: true,
+								fullscreen: true
 				});
 });

@@ -8,6 +8,9 @@
 	<meta property="og:image" content=" "/>
 	<meta property="og:description" content=" "/>
 	<title>Lakeside Porch & Pillow</title>
+	<!-- flickity style sheet -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
 	<!-- link to style sheet -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="hamburgers.min.css">
@@ -56,41 +59,41 @@
 	</header>
 	<section class="rooms__section wrapper">
 		<div class="rooms__list-item">
-			<p>King with Balcony</p>
+			<h3>King with Balcony</h3>
 			<div class="gallery">
-				<img class="gallery-image" data-flickity-lazyload="assets/King-1.jpg" alt="King with Balcony Room - Bed">
-				<img class="gallery-image" data-flickity-lazyload="assets/King-2.jpg" alt="King with Balcony Room - View of Balcony">
-				<img class="gallery-image" data-flickity-lazyload="assets/King-5.jpg" alt="King with Balcony Room - Balcony View">
-				<img class="gallery-image" data-flickity-lazyload="assets/King-3.jpg" alt="King with Balcony Room - Bathroom">
-				<img class="gallery-image" data-flickity-lazyload="assets/King-4.jpg" alt="King with Balcony Room - Bathroom 2">
+				<img class="gallery-image" src="assets/King-1.jpg" alt="King with Balcony Room - Bed">
+				<img class="gallery-image" src="assets/King-2.jpg" alt="King with Balcony Room - View of Balcony">
+				<img class="gallery-image" src="assets/King-5.jpg" alt="King with Balcony Room - Balcony View">
+				<img class="gallery-image" src="assets/King-3.jpg" alt="King with Balcony Room - Bathroom">
+				<img class="gallery-image" src="assets/King-4.jpg" alt="King with Balcony Room - Bathroom 2">
 			</div>
-			<!-- <li class="rooms__list-item">
-				<p>Queen with Balcony</p>
-				<div class="gallery">
-					<img src="assets/Balcony Q-1.jpg" alt="Queen with Balcony Room - View of Balcony">
-					<img src="assets/Balcony Q-2.jpg" alt="Queen with Balcony Room - View of Balcony 2">
-					<img src="assets/Balcony Q-5.jpg" alt="Queen with Balcony Room - Balcony View">
-					<img src="assets/Balcony Q-3.jpg" alt="Queen with Balcony Room - Bathroom">
-					<img src="assets/Balcony Q-4.jpg" alt="Queen with Balcony Room - Bathroom 2">
-				</div>
-			</li> -->
-			<div class="rooms__list-item">
-				<p>Queen</p>
-				<div class="gallery">
-					<img class="gallery-image" data-flickity-lazyload="assets/Queen-2.jpg" alt="Queen Room - View of room">
-					<img class="gallery-image" data-flickity-lazyload="assets/Queen-1.jpg" alt="Queen Room - Bed">
-				</div>
+		</div>
+		<div class="rooms__list-item">
+			<h3>Queen with Balcony</h3>
+			<div class="gallery">
+				<img class="gallery-image" src="assets/Balcony Q-1.jpg" alt="Queen with Balcony Room - View of Balcony">
+				<img class="gallery-image" src="assets/Balcony Q-2.jpg" alt="Queen with Balcony Room - View of Balcony 2">
+				<img class="gallery-image" src="assets/Balcony Q-5.jpg" alt="Queen with Balcony Room - Balcony View">
+				<img class="gallery-image" src="assets/Balcony Q-3.jpg" alt="Queen with Balcony Room - Bathroom">
+				<img class="gallery-image" src="assets/Balcony Q-4.jpg" alt="Queen with Balcony Room - Bathroom 2">
 			</div>
-			<!-- <li class="rooms__list-item">
-				<p>Double Queen Room</p>
-				<div class="gallery">
-					<img src="assets/Double Q-2.jpg" alt="Double Queen Room - Bed">
-					<img src="assets/Double Q-1.jpg" alt="Double Queen Room - View of room">
-				</div>
-			</li> -->
-		</ul>
-		<p class="room__rates">Room rates available upon request.</p>
+		</div>
+		<div class="rooms__list-item">
+			<h3>Queen</h3>
+			<div class="gallery">
+				<img class="gallery-image" src="assets/Queen-2.jpg" alt="Queen Room - View of room">
+				<img class="gallery-image" src="assets/Queen-1.jpg" alt="Queen Room - Bed">
+			</div>
+		</div>
+		<div class="rooms__list-item">
+			<h3>Double Queen Room</h3>
+			<div class="gallery">
+				<img class="gallery-image" src="assets/Double Q-2.jpg" alt="Double Queen Room - Bed">
+				<img class="gallery-image" src="assets/Double Q-1.jpg" alt="Double Queen Room - View of room">
+			</div>
+		</div>
 	</section>
+	<p class="room__rates">Room rates available upon request.</p>
 	<footer class="footer">
 		<div class="footer__contact-wrapper wrapper">
 			<div class="footer__item">
@@ -112,6 +115,9 @@
 	</footer>
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- JavaScript -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
 	<!-- link to our js file  -->
 	<script src="main.js"></script>
 </body>
