@@ -19,13 +19,13 @@
 	}
 }
 
-.gallery-image {
+.rooms__gallery-image {
 	height: 350px;
 	margin-right: 10px;
 }
 
 /* fullscreen */
-.gallery.is-fullscreen .gallery-image {
+.rooms__gallery.is-fullscreen .rooms__gallery-image {
 	height: 100%;
   }
 
@@ -51,7 +51,7 @@
 }
 
 @include respond-to("small") {
-	.gallery-image {
+	.rooms__gallery-image {
 		height: 200px;
 	}
 
@@ -62,7 +62,7 @@
 	}
 
 	/* fullscreen */
-	.gallery.is-fullscreen .gallery-image {
+	.rooms__gallery.is-fullscreen .rooms__gallery-image {
 		width: 100%;
 		height: auto;
 		/* vertically center */

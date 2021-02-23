@@ -9,9 +9,16 @@ $(function () {
 								$(".nav").toggleClass("nav__show");
 				});
 
-				$('.gallery').flickity({
+				$('.rooms__gallery').flickity({
 								cellAlign: 'center',
 								draggable: true,
 								fullscreen: true
+				});
+
+				$('.discover__gallery').flickity({
+								cellAlign: 'center',
+								draggable: true,
+								fullscreen: true,
+								wrapAround: true
 				});
 });
