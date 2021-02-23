@@ -35,7 +35,6 @@
 }
 
 .la-list_item {
-	// padding: 10px 20px;
 	width: 33%;
 	h2 {
 		padding-top: 30px;
@@ -64,6 +63,12 @@
 	}
 }
 
+@include respond-to("medium") {
+	.la-list_item {
+		width: 48%;
+	}
+}
+
 @include respond-to("small") {
 	.discover__gallery {
 		.flickity-page-dots {
@@ -88,6 +93,10 @@
 	.flickity-prev-next-button {
 		width: 30px;
     	height: 30px;
+	}
+
+	.la-list_item {
+		width: 100%;
 	}
 }
 

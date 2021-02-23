@@ -403,6 +403,10 @@ body {
   .la-list_item p {
     color: #3f4a55; }
 
+@media (max-width: 950px) {
+  .la-list_item {
+    width: 48%; } }
+
 @media (max-width: 680px) {
   .discover__gallery .flickity-page-dots {
     bottom: -35px; }
@@ -418,7 +422,9 @@ body {
     transform: translateY(-50%); }
   .flickity-prev-next-button {
     width: 30px;
-    height: 30px; } }
+    height: 30px; }
+  .la-list_item {
+    width: 100%; } }
 
 .contact__list {
   list-style: none;
